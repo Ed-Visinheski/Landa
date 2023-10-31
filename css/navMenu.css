@@ -1,0 +1,295 @@
+html {
+  background-color: rgba(250, 250, 250);
+}
+
+#loader {
+  /*Displayes the loader images across the entire screen*/
+  background-image: url("../images/loader.gif");
+  background-repeat: repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /*List of fonts that the browser may use*/
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  /*Adds the background colour for the top Menu*/
+  background-color: rgba(240, 240, 240);
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+#logoimage {
+  background-image: url(../images/landa.png);
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+  padding: 0px;
+  display: inline-block;
+}
+
+
+#divs {
+  /*Used to not display divs during the loading screen*/
+  display: none;
+}
+
+div {
+  border: 0px solid red;
+}
+
+article {
+  border: 0px solid green;
+}
+
+section {
+  border: 0px solid blue;
+}
+
+.outerbox {
+  width: 100%;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.white {
+
+  background-image: url(../images/landaman.jpg);
+  background-color: rgb(240, 240, 240);
+  background-blend-mode: darken;
+  border-radius: 45%;
+  animation: boxlogowhitecycle 5s infinite;
+  -webkit-animation: boxlogowhitecycle 5s infinite;
+  width: 25%;
+  padding-bottom: 20%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 100%;
+  margin: 2%;
+
+}
+
+.grey {
+
+  background-image: url(../images/landaman.jpg);
+  background-color: rgb(210, 210, 210);
+  background-blend-mode: darken;
+  border-radius: 45%;
+  animation: boxlogogreycycle 5s infinite;
+  -webkit-animation: boxlogogreycycle 5s infinite;
+  width: 25%;
+  padding-bottom: 20%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 100%;
+  margin: 2%;
+
+}
+
+.darkgrey {
+
+  background-image: url(../images/landaman.jpg);
+  background-color: rgb(175, 175, 175);
+  background-blend-mode: darken;
+  border-radius: 45%;
+  animation: boxlogodarkgreycycle 5s infinite;
+  -webkit-animation: boxlogodarkgreycycle 5s infinite;
+  width: 25%;
+  padding-bottom: 20%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 100%;
+  margin: 2%;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .white {
+    background-image: url(../images/landaman.jpg);
+    background-color: rgb(240, 240, 240);
+    background-blend-mode: darken;
+    border-radius: 45%;
+    animation: boxlogowhitecycle 5s infinite;
+    -webkit-animation: boxlogowhitecycle 5s infinite;
+    width: 75%;
+    padding-bottom: 61%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 100%;
+
+  }
+
+  .grey {
+    display: none;
+
+  }
+
+  .darkgrey {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #logoimage {
+    background-image: url(../images/smalllanda.png);
+    height: 25px;
+    width: 50px;
+    margin: 1px;
+    padding: 0px;
+    display: inline-block;
+  }
+}
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@keyframes boxlogowhitecycle {
+  0% {
+    background-color: rgb(240, 240, 240);
+  }
+
+  33% {
+    background-color: rgb(210, 210, 210);
+  }
+
+  67% {
+    background-color: rgb(175, 175, 175);
+  }
+
+  100% {
+    background-color: rgb(240, 240, 240);
+  }
+}
+
+@-webkit-keyframes boxlogowhitecycle {
+  0% {
+    background-color: rgb(240, 240, 240);
+  }
+
+  33% {
+    background-color: rgb(210, 210, 210);
+  }
+
+  67% {
+    background-color: rgb(175, 175, 175);
+  }
+
+  100% {
+    background-color: rgb(240, 240, 240);
+  }
+}
+
+@keyframes boxlogogreycycle {
+  0% {
+    background-color: rgb(210, 210, 210);
+  }
+
+  33% {
+    background-color: rgb(175, 175, 175);
+  }
+
+  67% {
+    background-color: rgb(240, 240, 240);
+  }
+
+  100% {
+    background-color: rgb(210, 210, 210);
+  }
+}
+
+@-webkit-keyframes boxlogogreycycle {
+  0% {
+    background-color: rgb(210, 210, 210);
+  }
+
+  33% {
+    background-color: rgb(175, 175, 175);
+  }
+
+  67% {
+    background-color: rgb(240, 240, 240);
+  }
+
+  100% {
+    background-color: rgb(210, 210, 210);
+  }
+}
+
+@keyframes boxlogodarkgreycycle {
+  0% {
+    background-color: rgb(175, 175, 175);
+  }
+
+  33% {
+    background-color: rgb(240, 240, 240);
+  }
+
+  67% {
+    background-color: rgb(210, 210, 210);
+  }
+
+  100% {
+    background-color: rgb(175, 175, 175);
+  }
+}
+
+@-webkit-keyframes boxlogodarkgreycycle {
+  0% {
+    background-color: rgb(175, 175, 175);
+  }
+
+  33% {
+    background-color: rgb(240, 240, 240);
+  }
+
+  67% {
+    background-color: rgb(210, 210, 210);
+  }
+
+  100% {
+    background-color: rgb(175, 175, 175);
+  }
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}

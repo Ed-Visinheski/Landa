@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landa WorldWide Online Clothing Shop" />
+  <meta name="author" content="Eduardo Cook Visinheski" />
+  <!-- <link rel="stylesheet" href="../css/navMenu.css"> -->
+  <link rel="stylesheet" href="css/navMenu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="js/scripts.js"></script>
+  <title>LANDA</title>
+</head>
+
+<body onload="loaderTimeOut()">
+  <header>
+    <div id="loader"></div>
+    <nav style="display:none" class="menu animate-bottom" id="respNav">
+      <a href='index.html' id="logoimage"></a>
+    </nav>
+  </header>
+
+
+
+  <article id="divs" class="animate-bottom">
+    <main>
+      <section class="outerbox">
+        <div class="white"></div>
+        <div class="grey"></div>
+        <div class="darkgrey"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="textcenter">
+        <h2>LANDA COMING SOON</h2>
+        <form name="frmEmail" action="php/index.php" method="post">
+          <input autocomplete="email" type="text" name="email" id="email" placeholder="email@domain.com">
+          <input type="submit" name="submit" value="subscribe" class="subscribe"
+            onclick="emailValidation(document.frmEmail.email)" />
+        </form>
+      </div>
+    </footer>
+
+
+  </article>
+</body>
+
+</html>
